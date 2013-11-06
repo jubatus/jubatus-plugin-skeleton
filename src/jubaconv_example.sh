@@ -13,6 +13,8 @@ cat << '_EOF_' | jubaconv -i datum -o fv -c server_config.json
   "string_values": {
     "data1": "The quick brown fox jumps over the lazy dog.",
     "data2": "Now I see, referees, I won."
+  },
+  "binary_values": {
   }
 }
 _EOF_

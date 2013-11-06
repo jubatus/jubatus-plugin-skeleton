@@ -16,7 +16,7 @@
   "string_types": {
     "EXAMPLE": {
       "method": "dynamic",
-      "path": "/pato/to/libEXAMPLE_splitter.so",
+      "path": "/path/to/libEXAMPLE_splitter.so",
       "function": "create"
     }
   },
