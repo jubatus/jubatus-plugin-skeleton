@@ -1,33 +1,8 @@
-plugin_names = ['EXAMPLE_splitter']
-
-def options(opt):
-  pass
-
-def configure(conf):
-  pass
+subdirs = ['string_skeleton', 'binary_skeleton']
 
 def build(bld):
-  for plugin_name in plugin_names:
-    bld.shlib(
-      source = plugin_name + '.cpp',
-      target = plugin_name,
-      use='JUBACONVERTER',
-      )
-
-  bld.program(
-    source = 'client.cpp',
-    target = 'client',
-    use=['MSGPACK', 'JUBATUS_MPIO', 'JUBATUS_MSGPACK-RPC'],
-    )
-
-  bld(
-    rule = 'cp ${SRC} ${TGT}',
-    source = 'server_config.json',
-    target = bld.path.get_bld(),
-    )
-
-  bld(
-    rule = 'cp ${SRC} ${TGT}',
-    source = 'jubaconv_example.sh',
-    target = bld.path.get_bld(),
-    )
+    bld.recurse(subdirs)
+def options(opt):
+    pass
+def configure(conf):
+    pass
