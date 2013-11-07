@@ -13,6 +13,8 @@
   "string_filter_rules": [],
   "num_filter_types": {},
   "num_filter_rules": [],
+  "binary_filter_types": {},
+  "binary_filter_rules": [],
   "string_types": {
     "EXAMPLE": {
       "method": "dynamic",
@@ -25,6 +27,7 @@
   ],
   "num_types": {},
   "num_rules": [{"key" : "*", "type" : "num"}]
+
 }
 
 }
