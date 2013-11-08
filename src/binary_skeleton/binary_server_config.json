@@ -16,7 +16,7 @@
   "binary_filter_types": {},
   "binary_filter_rules": [],
   "string_types": {},
-  "string_rules": [ ],
+  "string_rules": [],
   "num_types": {},
   "num_rules": [{"key" : "*", "type" : "num"}],
   "binary_types":{

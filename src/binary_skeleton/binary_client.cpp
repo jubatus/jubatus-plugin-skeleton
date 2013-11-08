@@ -15,11 +15,11 @@ using jubatus::client::common::datum;
 int main() {
   datum d;
   std::ifstream ifs;
-  try{
+  try {
     ifs.exceptions(std::ios::failbit);
     ifs.open("jubatus.bmp", std::ios_base::binary);
   }
-  catch (std::ios_base::failure& e){
+  catch (std::ios_base::failure& e) {
     std::cout << "Error: can not open data file" << std::endl; 
     exit(1);
   }
