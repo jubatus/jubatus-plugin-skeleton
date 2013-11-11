@@ -6,7 +6,7 @@
 
 # Standard input of jubaconv must be a JSON-formatted datum.
 
-cat << '_EOF_' | jubaconv -i datum -o fv -c server_config.json
+cat << '_EOF_' | jubaconv -i datum -o fv -c string_server_config.json
 {
   "num_values": {
   },
