@@ -21,10 +21,10 @@ To build a plug-in, run:
 
 You will see the plug-in (a shared library) and an example client in ``build/src`` directory.
 
-Now, change ``EXAMPLE_splitter`` to your project's name and write your own code.
+Now, change ``EXAMPLE_splitter`` or ``binary_length`` to your project's name and write your own code.
 
 How to Test Plug-Ins
 --------------------
 
-* ``jubaconv`` command, bundled with Jubatus, can be used to test your plug-in without running servers. See ``jubaconv_example.sh`` for the usage.
+* ``jubaconv`` command, bundled with Jubatus, can be used to test your plug-in without running servers. See ``src/string_skeleton/jubaconv_example.sh`` for the usage.
 * You can test your plug-in from the RPC layer by using `convchecker <https://github.com/odasatoshi/convchecker/>`_ server written by @odasatoshi.
