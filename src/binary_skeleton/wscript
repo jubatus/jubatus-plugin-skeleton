@@ -1,0 +1,27 @@
+plugin_names = ['binary_length']
+
+def options(opt):
+  pass
+
+def configure(conf):
+  pass
+
+def build(bld):
+  for plugin_name in plugin_names:
+    bld.shlib(
+      source = plugin_name + '.cpp',
+      target = plugin_name,
+      use='JUBACONVERTER',
+      )
+
+  bld.program(
+    source = 'binary_client.cpp',
+    target = 'binary_client',
+    use=['MSGPACK', 'JUBATUS_MPIO', 'JUBATUS_MSGPACK-RPC'],
+    )
+	
+  bld(
+    rule = 'cp ${SRC} ${TGT}',
+    source = 'binary_server_config.json',
+    target = bld.path.get_bld(),
+    )

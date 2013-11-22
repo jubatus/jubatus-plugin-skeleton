@@ -13,10 +13,12 @@
   "string_filter_rules": [],
   "num_filter_types": {},
   "num_filter_rules": [],
+  "binary_filter_types": {},
+  "binary_filter_rules": [],
   "string_types": {
     "EXAMPLE": {
       "method": "dynamic",
-      "path": "/pato/to/libEXAMPLE_splitter.so",
+      "path": "/path/to/libEXAMPLE_splitter.so",
       "function": "create"
     }
   },
@@ -25,6 +27,7 @@
   ],
   "num_types": {},
   "num_rules": [{"key" : "*", "type" : "num"}]
+
 }
 
 }
