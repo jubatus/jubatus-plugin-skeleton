@@ -8,7 +8,7 @@ def configure(conf):
   conf.env.CXXFLAGS += ['-O2', '-Wall', '-g', '-pipe']
   conf.load('compiler_cxx')
 
-  conf.check_cxx(lib = 'jubaconverter')
+  conf.check_cfg(package = 'jubatus_core', args = '--cflags --libs')
 
   # for clients
   conf.check_cxx(lib = 'msgpack')

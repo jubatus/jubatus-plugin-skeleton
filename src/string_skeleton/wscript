@@ -11,11 +11,11 @@ def build(bld):
     bld.shlib(
       source = plugin_name + '.cpp',
       target = plugin_name,
-      use='JUBACONVERTER',
+      use='JUBATUS_CORE',
       )
 
 
-	
+
   bld(
     rule = 'cp ${SRC} ${TGT}',
     source = 'string_server_config.json',
@@ -25,4 +25,4 @@ def build(bld):
      rule = 'cp ${SRC} ${TGT}',
      source = 'jubaconv_example.sh',
      target = bld.path.get_bld(),
-  )	
+  )

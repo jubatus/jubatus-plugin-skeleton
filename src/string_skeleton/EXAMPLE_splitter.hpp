@@ -1,4 +1,4 @@
-#include <jubatus/core/plugin.hpp>
+#include <jubatus/core/fv_converter/word_splitter.hpp>
 
 class EXAMPLE_splitter : public jubatus::core::fv_converter::word_splitter {
  public:
