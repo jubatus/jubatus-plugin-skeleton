@@ -1,4 +1,4 @@
-#include <jubatus/core/plugin.hpp>
+#include <jubatus/core/fv_converter/binary_feature.hpp>
 
 class binary_converter : public jubatus::core::fv_converter::binary_feature {
 public:
