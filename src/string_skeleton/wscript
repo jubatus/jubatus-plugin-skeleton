@@ -11,7 +11,7 @@ def build(bld):
     bld.shlib(
       source = plugin_name + '.cpp',
       target = plugin_name,
-      install_path = '${PREFIX}/lib/jubatus/plugin',
+      install_path = bld.env['LIBDIR'] + '/jubatus/plugin',
       use='JUBATUS_CORE',
       )
 
