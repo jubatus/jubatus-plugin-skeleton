@@ -22,7 +22,7 @@
   "binary_types":{
 	"length": {
 		"method": "dynamic",
-		"path": "/home/udagawa/github/TkrUdagawa/jubatus-plugin-skeleton/build/src/libbinary_length.so",
+		"path": "/path/to/libbinary_length.so",
 		"function": "create"
 	}
    },
