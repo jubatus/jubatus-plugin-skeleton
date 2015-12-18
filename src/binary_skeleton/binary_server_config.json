@@ -13,8 +13,6 @@
   "string_filter_rules": [],
   "num_filter_types": {},
   "num_filter_rules": [],
-  "binary_filter_types": {},
-  "binary_filter_rules": [],
   "string_types": {},
   "string_rules": [],
   "num_types": {},
@@ -27,7 +25,7 @@
 	}
    },
   "binary_rules": [
-  		  {"key" : "*", "type" : "length", "sample_weight": "bin", "global_weight": "bin"}
+  		  {"key" : "*", "type" : "length"}
   ]
 }
 
