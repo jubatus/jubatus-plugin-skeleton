@@ -7,8 +7,8 @@ Based on the ``extract_ascii`` plug-in written by Yuya Unno
 Requirements
 ------------
 
-* Jubatus 0.6.0+ (development headers required)
-* jubatus_core 0.0.1+
+* Jubatus 1.1.0+ (development headers required)
+* jubatus_core 1.1.0+
 
 Usage
 -----
